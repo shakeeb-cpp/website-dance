@@ -61,8 +61,8 @@ app.post('/contact', (req, res) => {
 
     var myData = new Contact(req.body);
     myData.save().then(() => {
-        res.send('<h1>Your Data has been submitted successfully</h1>');
-        // res.status(200).render('index.pug');
+        // res.send('<h1>Your Data has been submitted successfully</h1>');
+        res.status(200).render('index.pug');
     }).catch(() => {
         res.status(400).send('Error cannot load a data.');
     });

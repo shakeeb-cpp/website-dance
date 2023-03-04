@@ -13,7 +13,7 @@ function scrollFunction() {
     }
     else {
         document.getElementById("navbar").style.background = "none";
-        document.getElementById("btn").style.opacity = "0";
+        document.getElementById("btn").style.opacity = "1";
     }
 }
 
