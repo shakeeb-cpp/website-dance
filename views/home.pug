@@ -1,0 +1,293 @@
+extends base.pug
+
+
+block scripts
+    script(src='../static/script.js')
+
+
+
+block style
+    style
+        include ../static/style.css 
+
+
+
+
+block content
+    <div class="container-fluid mb-5 shadow-sm" id="cont">
+        <h1 class="text-white ms-md-5 ms-3 me-3 fw-lighter" id="head">Welcome To Star Dance Academy</h1>
+        <h4 class="text-danger mt-0 ms-md-5 ms-3 me-5  mb-5 fw-lighter text-opacity-75" id="head2"><span 
+        |    class="me-2">&#9866;</span>Celebrate The Passion Of Dance And The Passion Of Our Team</h4>
+        <button onclick="UpScroll()" class="col-1 border-0 btn btn-body btn-sm text-black rounded-circle fixed-bottom ms-auto mb-5 pb-5 me-sm-5 me-1 pe-5" id="btn" style="width: 30px; height: 30px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#da4520" class="bi bi-arrow-up-square-fill rounded-circle shadow" viewBox="0 0 16 16">
+            |   <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+            </svg>
+        </button>
+    </div>
+    <div class="container-fluid shadow"  id="cont2"> 
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Star Dance Academy</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="/" method="post">
+            <div class="mb-3">
+                <input type="text" name="name" class="form-control" placeholder="Enter Your Name" aria-label="Name">
+            </div>
+            <div class="mb-3">
+                <input type="number" name="Phone"  class="form-control" placeholder="Enter Your Number" aria-label="Number">
+            </div>
+            <div class="mb-3">
+                <input type="email" name="email"  class="form-control" placeholder="Username@gmail.com" aria-label="Email ID">
+            </div>
+            <div class="mb-3">
+                <textarea  type="textarea" name="Message"  class="form-control" placeholder="Message" aria-label="Message" rows="4"></textarea>
+            </div>
+            <div class="mb-3">
+                <input  type="submit"  class="form-control btn btn-sm btn-danger" aria-label="submit">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="container-fluid bg-body m-auto mt-5 mb-2" id="service">
+        <h1 class="text-center text-danger mb-5" style="font-family: 'Kaushan Script', cursive;">Our Speciality</h1>
+        <div class="row row-cols-2 row-cols-md-4 g-1">
+            <div class="col">            
+                <div class="card text-center  border-0" id="card1">
+                    <img src="https://image3.jdomni.in/banner/28012020/F7/0F/45/15C1BE6E51991648475B3C1B41_1580193885374.png?output-format=webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"  id="font">Bollywood</h5>
+                      <p class="card-text fw-normal text-danger  text-opacity-75" style="font-family: 'Shadows Into Light', cursive;">Learn to move and groove on Bollywood songs from our talented and experienced choreographers.</p>
+                      <button  class="btn btn-danger rounded-pill mt-2 border" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="font-size: 13px;">Enquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card text-center border-0" id="card1">
+                    <img src="https://image3.jdomni.in/banner/28012020/5A/81/D1/C0AEDEC26A7C8A72E6C6EFBE01_1580193896402.jpg?output-format=webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"  id="font">Contemporary</h5>
+                      <p class="card-text fw-normal text-danger  text-opacity-75" style="font-family: 'Shadows Into Light', cursive;">Connect your mind and body through fluid dance movements from the graceful contemporary.</p>
+                      <button  class="btn btn-danger rounded-pill mt-2 border" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="font-size: 13px;">Enquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card text-center border-0" id="card1">
+                    <img src="https://image2.jdomni.in/banner/28012020/35/97/37/EF84DC0833444D16FB27E7BCAF_1580193911589.jpg?output-format=webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" id="font">Hip Hop</h5>
+                      <p class="card-text fw-normal text-danger  text-opacity-75" style="font-family: 'Shadows Into Light', cursive;">Learn wide range of street style dance forms such as locking, popping, breaking etc. from our choreographers.</p>
+                      <button  class="btn btn-danger rounded-pill mt-2 border" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="font-size: 13px;">Enquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card text-center border-0" id="card1">
+                    <img src="https://image3.jdomni.in/banner/28012020/D6/2C/48/B4BD7D7EEE95A6B5642F711EB2_1580193955039.png?output-format=webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" id="font">Salsa</h5>
+                      <p class="card-text fw-normal text-danger text-opacity-75" style="font-family: 'Shadows Into Light', cursive;">Build some chemistry and have fun by learning the art of salsa under the guidance of our experts.</p>
+                      <button  class="btn btn-danger rounded-pill mt-2 border" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="font-size: 13px;">Enquire Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+
+    <div class="container-flex" id="about">
+        <div class="row row-cols-2 row-cols-md-2 g-0">
+            <img class=" col-md-6 col-10" id="img" src="https://image3.jdomni.in/banner/23012020/C1/E4/CB/8B2803A217154BA4A3F3392E3B_1579779434997.png?output-format=webp" alt="...">
+            <!-- <img class="d-md-none d-block" id="img2" src="https://image3.jdomni.in/banner/24012020/15/DF/D6/260862AD29D7D0A1C5C2750D88_1579848303103.jpg" alt="..."> -->
+            <div class="col-md-6 col-10 m-auto pe-md-5 p-0">
+                <h1 class="text-center text-danger text-opacity-75" style="font-family: 'Kaushan Script', cursive;">About Us</h1>            
+                <h5 class="text-center text-muted mt-3 fw-normal lh-base" style="font-family: 'Shadows Into Light', cursive; font-size: 18px;">We, Star Dance Academy situated at Peshawar, Mardan, Swabi, have experienced trainers who takes dance classes for Bollywood, Hip-Hop, Contemporary etc. Here you can learn to dance in an easy, fast and fun filled way. We keep ourselves up-to-date with modern methods and idea of the dancing styles and teaching aids. All our instructors are professionally trained dancers with experience to ensure that learning dance will become fun and exciting.</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container bg-body m-auto mt-5 mb-5 pb-5" id="">
+        <h1 class="text-center text-danger mb-5" style="font-family: 'Kaushan Script', cursive;">Our Gallary</h1>
+        <div class="row row-cols-1 row-cols-lg-3 g-lg-4 g-0">
+            <div class="col mb-4">            
+                <div class="card text-center  border-0" id="card2">
+                    <img src="https://image3.jdomni.in/banner/23012020/F6/87/53/86DA9DA227CA10153A558535F5_1579761530066.jpg?output-format=webp" alt="...">
+                </div>
+            </div>
+
+            <div class="col mb-4">
+                <div class="card text-center border-0 mt-1" id="card2">
+                    <img src="https://source.unsplash.com/random/?dance" class="card-img-top" alt="...">
+                </div>
+            </div>
+
+            <div class="col mb-4">
+                <div class="card text-center border-0" id="card2">
+                    <img src="https://image3.jdomni.in/banner/23012020/1D/09/5D/7C3D2BC279F6B689CC789E666D_1579761430906.jpg?output-format=webp"  alt="...">
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    
+    
+    <div class="container-flex" id="cont4">
+
+        <div id="carouselExampleInterval" class="carousel slide  ms-md-5 ms-2 mt-5 m-auto px-md-5 px-0" data-bs-ride="carousel" >
+            <div class="carousel-inner ms-md-5 ms-1">
+                <div class="carousel-item active mt-md-5 mt-4" data-bs-interval="4000">
+                    <div class=" d-block w-100 pe-md-5 pe-2 mb-5">
+                        <h3 class="mb-0"><img class="mb-3 me-2" src="https://image3.jdomni.in/banner/07032022/77/F9/30/26431B6191C6336D4D817771BF_1646642364964.png?output-format=webp" alt="" style="width: 25px;">Michael</h3>
+                        <p class="ms-4 ps-2 lead fw-normal">He is master in contemporary and remain a champion in a  world dance.</p>
+                    </div>
+                    <div class="d-block w-100 pe-5">
+                        <h3 class="mb-0"><img class="mb-3 me-2" src="https://image3.jdomni.in/banner/07032022/77/F9/30/26431B6191C6336D4D817771BF_1646642364964.png?output-format=webp" alt="" style="width: 25px;">Robert Jhon</h3>
+                        <p class="ms-4 ps-2 lead fw-normal">He is an experienced dancer around all the stuff he take care of all his students.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item mt-md-5 mt-3" data-bs-interval="8000">
+                    <div class="d-block w-100 pe-md-5 pe-2 mb-5">
+                        <h3 class="mb-0"><img class="mb-3 me-2" src="https://image3.jdomni.in/banner/07032022/77/F9/30/26431B6191C6336D4D817771BF_1646642364964.png?output-format=webp" alt="" style="width: 25px;">Angelina</h3>
+                        <p class="ms-4 ps-2 lead fw-normal">she is master in salsa and a good choreographer.she has its own style in salsa.</p>
+                    </div>
+                    <div class="d-block w-100  pe-5">
+                        <h3 class="mb-0"><img class="mb-3 me-2" src="https://image3.jdomni.in/banner/07032022/77/F9/30/26431B6191C6336D4D817771BF_1646642364964.png?output-format=webp" alt="" style="width: 25px;">Martin</h3>
+                        <p class="ms-4 ps-2 lead fw-normal">He has a lot of experience in hip hop dance , And best known for its moves.</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control me-5" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gray" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                </svg>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon visually-hidden" aria-hidden="true" style="margin-right: 100px;"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="container-flex mb-5 " id="" style="height: 410px;"></div>
+
+
+    <div  class="container mt-5 pb-5" id="Class">
+        <h1 class="text-center text-danger mb-5 pb-2" style="font-family: 'Kaushan Script', cursive;">Contact Us</h1>
+        <div class="row row-cols-1 row-cols-md-2 m-auto">
+
+            <div class="col ms-md-0 ms-3">
+                <div class="card mb-5 border-0 p-0" id="card5" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-2">
+                        <img src="https://image3.jdomni.in/banner/23012020/8E/04/0E/0727930D039448991809B6F492_1579787374518.png?output-format=webp" class="img-fluid rounded-start" alt="..." style="height: 50px;">
+                      </div>
+                      <div class="col-md-6 col-7">
+                        <div class="card-body p-0">
+                          <h6 class="card-title lead fw-normal mb-2">Our Office Address</h6>
+                          <p class="card-text text-muted">Peshawar, Mardan, Swabi 400064</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            
+                <div class="card mb-5 border-0 p-0" id="card5"  style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-2">
+                        <img src="https://image3.jdomni.in/banner/23012020/BA/8D/1A/76E57DF9254EE982D86F7C1263_1579787385352.png?output-format=webp" class="img-fluid rounded-start" alt="..." style="height: 50px;">
+                      </div>
+                      <div class="col-md-6 col-6">
+                        <div class="card-body p-0">
+                          <h6 class="card-title lead fw-normal mb-2">General Enquiries</h6>
+                          <a href="#" class="card-text text-muted text-decoration-none">writershakeeb12@gmail.com</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            
+                <div class="card mb-5 border-0 p-0" id="card5"  style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-2">
+                        <img src="https://image2.jdomni.in/banner/23012020/27/EE/C5/691C739A613EA488EEB1D22F24_1579787412423.png?output-format=webp" class="img-fluid rounded-start" alt="..." style="height: 50px;">
+                      </div>
+                      <div class="col-md-6 col-6">
+                        <div class="card-body p-0">
+                          <h6 class="card-title lead fw-normal mb-2">Call Us</h6>
+                          <p class="card-text text-muted">+923085662249</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            
+                <div class="card mb-5 border-0 p-0" id="card5"  style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-2">
+                        <img src="https://image3.jdomni.in/banner/23012020/9D/87/34/7DA0EAC1558F7C70907900ADF6_1579787401931.png?output-format=webp" class="img-fluid rounded-start" alt="..." style="height: 50px;">
+                      </div>
+                      <div class="col-md-6 col-7">
+                        <div class="card-body p-0">
+                          <h6 class="card-title lead fw-normal mb-2">Our Timing</h6>
+                          <p class="card-text text-muted">Mon - Sun : 09:00 AM - 09:00 PM</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+           
+         
+
+            <form action="/" method="post" class="col">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <input type="text " name="name" class="form-control" placeholder="Enter Your Name" aria-label="Name">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input type="number" name="Phone"  class="form-control" placeholder="Enter Your Number" aria-label="Number">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input type="email" name="email"  class="form-control" placeholder="Username@gmail.com" aria-label="Email ID">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input type="text" name="Address"  class="form-control" placeholder="Enter Your Address" aria-label="Address">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <textarea  type="textarea" name="Message"  class="form-control" placeholder="Message" aria-label="Message" rows="4"></textarea>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input  type="submit"  class="form-control btn btn-sm btn-danger" aria-label="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+   
+
+
+    
+   
+
+
+     

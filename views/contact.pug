@@ -1,0 +1,112 @@
+extends base.pug
+
+block scripts
+    script(src='../static/script.js')
+
+block style
+    style
+        include ../static/style.css 
+
+block content
+    <div class="container-fluid mb-5 shadow-sm" id="cont-contact">
+        <h1 class="text-dark ms-md-5 ms-3 me-3 fw-lighter" id="head">Contact To Our Team</h1>
+        <h4 class="text-danger mt-0 ms-md-5 ms-3 me-5  mb-5 fw-lighter text-opacity-75" id="head2"><span 
+        |    class="me-2">&#9866;</span>Celebrate The Passion Of Dance And The Passion Of Our Team</h4>
+        <button onclick="UpScroll()" class="col-1 border-0 btn btn-body btn-sm text-black rounded-circle fixed-bottom ms-auto mb-5 me-sm-3 me-4" id="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#da4520" class="bi bi-arrow-up-square-fill rounded-circle shadow" viewBox="0 0 16 16">
+            |   <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+            </svg>
+        </button>
+    </div>
+    <div class="container-fluid "  id="cont2"> 
+    </div>
+
+
+    <div class="container mt-5 pb-5">
+        <h1 class="text-center text-danger mb-5 pb-2" style="font-family: 'Kaushan Script', cursive;">Contact Us</h1>
+        <div class="row row-cols-1 row-cols-md-2 m-auto">
+
+            <div class="col ms-md-0 ms-3">
+                <div class="card mb-5 border-0 p-0" id="card5" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-2">
+                        <img src="https://image3.jdomni.in/banner/23012020/8E/04/0E/0727930D039448991809B6F492_1579787374518.png?output-format=webp" class="img-fluid rounded-start" alt="..." style="height: 50px;">
+                      </div>
+                      <div class="col-md-6 col-7">
+                        <div class="card-body p-0">
+                          <h6 class="card-title lead fw-normal mb-2">Our Office Address</h6>
+                          <p class="card-text text-muted">Peshawar, Mardan, Swabi 400064</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            
+                <div class="card mb-5 border-0 p-0" id="card5"  style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-2">
+                        <img src="https://image3.jdomni.in/banner/23012020/BA/8D/1A/76E57DF9254EE982D86F7C1263_1579787385352.png?output-format=webp" class="img-fluid rounded-start" alt="..." style="height: 50px;">
+                      </div>
+                      <div class="col-md-6 col-6">
+                        <div class="card-body p-0">
+                          <h6 class="card-title lead fw-normal mb-2">General Enquiries</h6>
+                          <a href="#" class="card-text text-muted text-decoration-none">writershakeeb12@gmail.com</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            
+                <div class="card mb-5 border-0 p-0" id="card5"  style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-2">
+                        <img src="https://image2.jdomni.in/banner/23012020/27/EE/C5/691C739A613EA488EEB1D22F24_1579787412423.png?output-format=webp" class="img-fluid rounded-start" alt="..." style="height: 50px;">
+                      </div>
+                      <div class="col-md-6 col-6">
+                        <div class="card-body p-0">
+                          <h6 class="card-title lead fw-normal mb-2">Call Us</h6>
+                          <p class="card-text text-muted">+923085662249</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            
+                <div class="card mb-5 border-0 p-0" id="card5"  style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-2">
+                        <img src="https://image3.jdomni.in/banner/23012020/9D/87/34/7DA0EAC1558F7C70907900ADF6_1579787401931.png?output-format=webp" class="img-fluid rounded-start" alt="..." style="height: 50px;">
+                      </div>
+                      <div class="col-md-6 col-7">
+                        <div class="card-body p-0">
+                          <h6 class="card-title lead fw-normal mb-2">Our Timing</h6>
+                          <p class="card-text text-muted">Mon - Sun : 09:00 AM - 09:00 PM</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+           
+         
+
+            <form action="/contact" method="post" class="col">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <input type="text" name="name" class="form-control" placeholder="Enter Your Name" aria-label="Name">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input type="number" name="Phone"  class="form-control" placeholder="Enter Your Number" aria-label="Number">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input type="email" name="email"  class="form-control" placeholder="Username@gmail.com" aria-label="Email ID">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input type="text" name="Address"  class="form-control" placeholder="Enter Your Address" aria-label="Address">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <textarea  type="textarea" name="Message"  class="form-control" placeholder="Message" aria-label="Message" rows="4"></textarea>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input  type="submit"  class="form-control btn btn-sm btn-danger" aria-label="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>

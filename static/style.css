@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/* font-family: "Kaushan Script"; */
+
+.nav-item {
+    font-family: 'Lacquer', cursive;
+    font-size: 1.1rem;
+}
+#card1{
+    transition: all .20s ease-in-out; 
+}
+#card1:hover{
+    box-shadow: 1px 1px 11px 2px rgba(240, 93, 93, 0.3);
+}
+
+#card2{
+    box-shadow: 1px 1px 11px 2px rgba(240, 93, 93, 0.3);
+}
+
+.nav li:after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #8a0b0b;
+    transform: scaleX(0);
+    transition: .2s ease-in-out;
+}
+.navbar{
+    /* opacity: 0.9; */
+    transition: all .50s ease-in-out; 
+}
+#btn{
+    transition: all .30s ease-in-out; 
+}
+
+.nav li:hover:after {
+    transform: scaleX(1);
+    color: #f13f3f;
+}
+
+#gmail{
+    color: #da4520;
+ }
+#gmail:hover{
+   color: #d62121;
+}
+
+@media (max-width:976px) {
+    .navbar {
+        background-color: rgba(26, 26, 26, 0.99);
+    }
+}
+
+#cont {
+    /* top: 57px; */
+    height: 580px;
+    background-size: 100%;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    background: center/cover no-repeat url('/static/5.jpg');
+    background-attachment: fixed;
+    /* background-color: black;  5 6 10 11 12*/
+}
+
+#cont-contact {
+    /* top: 57px; */
+    height: 580px;
+    background-size: 100%;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    background: center/cover no-repeat url('https://image1.jdomni.in/banner/06082021/4B/17/EE/429B494B5E453E92F61712AF28_1628254035264.jpg?output-format=webp');
+    background-attachment: fixed;
+    /* background-color: black;  5 6 10 11 12*/
+}
+
+#cont4{
+    height: 410px;
+
+    /* background-size: 100%; */
+    width: 100%;
+    left: 0px;
+    top: auto;
+    position: absolute;
+    background:  url('https://image2.jdomni.in/banner/27072021/29/74/B8/EF37EA0DD93D4D4E59AA97F401_1627366045066.png?output-format=webp');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 570px;
+    background-attachment:fixed;
+    background-color: rgb(255, 240, 240);
+    /* background-color: rgb(248, 217, 217); */
+
+}
+
+.navbar-brand{
+    transition: all .10s ease-in;
+}
+.navbar-brand:hover{
+    transform: scale(0.95);
+}
+
+
+/* https://source.unsplash.com/random/900×700/?dancer */
+
+
+#font{
+    font-family: 'Yeon Sung', cursive;
+}
+
+#head1 {
+    font-family: 'Yeon Sung', cursive;
+    padding-top: 16px;
+    font-size: 20px;
+}
+
+#head {
+    font-family: 'Yeon Sung', cursive;
+    font-size: 40px;
+    margin-top: 190px;
+}
+
+#head2 {
+    font-family: 'Yeon Sung', cursive;
+    padding-top: 16px;
+    font-size: 18px;
+}
+#cont2{
+    height:581px;
+}
+
+
+.card-img-top{
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+}
+
+#img{
+    /* height: 640px; */
+    object-fit: contain;
+    object-position: center;
+}
+#img2{
+    /* height: 940px; */
+    object-fit: contain;
+    object-position: center;
+}
+
+
+#web-foot {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+
+@media (max-width:766px) {
+    #head {
+        font-family: 'Yeon Sung', cursive;
+        font-size: 30px;
+        margin-top: 190px;
+    }
+
+    #head2 {
+        font-family: 'Yeon Sung', cursive;
+        padding-top: 1px;
+        font-size: 14px;
+    }
+
+    #cont {
+        /* top: 57px; */
+        height: 515px;
+        background-size: 100%;
+        width: 100%;
+        left: 0px;
+        background-attachment: fixed;
+        position: absolute;
+        background: center/cover no-repeat url('/static/5.jpg');
+    }
+    #cont2{
+        height: 514px;
+    }
+    #img{
+        /* height: 340px; */
+        object-fit: cover;
+        object-position: center;
+    }
+    #cont4{
+        height: 410px;
+    
+        /* background-size: 100%; */
+        width: 100%;
+        left: 0px;
+        top: auto;
+        position: absolute;
+        background:  url('https://image2.jdomni.in/banner/27072021/29/74/B8/EF37EA0DD93D4D4E59AA97F401_1627366045066.png?output-format=webp');
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: center;
+        background-size: 330px;
+        background-attachment:fixed;
+        background-color: rgb(255, 240, 240);
+        /* background-color: rgb(248, 217, 217); */
+    
+    }
+
+}
+
+
